@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  grass-desktop:
+    image: docker.io/ductran040503/grass:latest
+    container_name: grass-desktop
+    hostname: my_device
+    environment:
+      - USER_EMAIL=hienduc040503@gmail.com
+      - USER_PASSWORD=Hienduc040503@
+    ports:
+      - "5900:5900"
+      - "6080:6080"
+    tty: true
+    stdin_open: true

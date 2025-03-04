@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: grass
+    env: docker
+    dockerComposeFile: docker-compose.yaml
+    ports:
+      - 5900
+      - 6080
